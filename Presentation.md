@@ -16,7 +16,7 @@ section {
 
 # Random Generation Number on Linux Systems <!-- fit -->
 
-How does it works ?
+How does it work ?
 
 ---
 <!-- _class: invert -->
