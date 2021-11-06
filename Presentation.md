@@ -4,112 +4,97 @@ paginate: true
 color: #ffff
 backgroundColor: #2A2A2A
 header: '![width:100px height:100px](./img/logo.png)'
-footer: "**01/01/1970 - Nicolas F**"
+footer: "**10/11/2021 - Nicolas F**"
 author: Xen0rInspire
 ---
 <style>
 section {
   font-family: 'Century Gothic', serif !important;
+  font-size: 26pt
 }
 </style>
 <!-- _class: invert -->
 
-# Random Generation Number on Linux Systems <!-- fit -->
+# Random Number Generation on Linux Systems <!-- fit -->
 
 How does it work ?
 
 ---
 <!-- _class: invert -->
 
-![bg auto](./img/debian-logo.png)
-![bg contain](./img/arch-logo.png)
-![bg 50%](./img/fedora-logo.png)
+# Technical Terminology
+
+- Entropy
+- Special files on Linux distributions
+- Pseudorandom number generation (PRNG)
 
 ---
 <!-- _class: invert -->
 
-![bg 30% vertical](./img/debian-logo.png)
-![bg 20% vertical](./img/arch-logo.png)
-![bg 10% vertical](./img/fedora-logo.png)
+# What is the entropy ?
+
+---
+
+<!-- _class: invert -->
+
+*The entropy means a measurable physical property that is particularly  associated with a state of **disorder**, **randomness**, **uncertainty** or even **chaos**.*
 
 ---
 <!-- _class: invert -->
 
-![bg auto left:40%](./img/debian-logo.png)
+# Example in computer science
+<br>
 
-# Left image
-Lorem ipsum ...
+String 1 : `aiK!l0bUMud5?2`
 
----
-<!-- _class: invert -->
-
-![bg fit right](./img/arch-logo.png)
-![bg 70%](./img/fedora-logo.png)
-
-# Multiple images
-
-Lorem ipsum ...
+String 2 : `aaaAbkkKmmB99b`
 
 ---
 <!-- _class: invert -->
 
-# Some main commands
+# Example in computer science
+<br>
 
-- `ls`
-- `cd`
-## Bash script
+String 1 : `aiK!l0bUMud5?2` &larr; Better entropy
 
-``` bash
-#!/usr/bin/env bash
-main() {
-  echo "Hello, World!"
-}
-main
+String 2 : `aaaAbkkKmmB99b`
+
+---
+<!-- _class: invert -->
+
+# What are the special files on Linux distributions ?
+
+---
+
+<!-- _class: invert -->
+
+*A **device file** or **special file** is an interface to a **device driver** that appears in a file system as if it were an ordinary file.*
+
+---
+
+<!-- _class: invert -->
+
+<br>
+
+## Block devices
+
+```bash
+/dev/sda
+/dev/nvme
+/dev/vda
+/dev/cdrom
 ```
 
----
-<!-- _class: invert -->
-# Some main distros
+## Characters devices
 
-1. Debian
-2. Arch
-3. Fedora
-
-## C programming
-
-``` C
-int main(){
-  printf("hello,world\n");
-}
+```bash
+/dev/random
+/dev/urandom
+/dev/zero
+/dev/ttyX # where X is a number
 ```
-
 ---
+
 <!-- _class: invert -->
 
-# Begin with MARP
-
----> [MARP](https://marp.app/)
-
----
-<!-- _class: invert -->
-
-![bg](white)
-![](black)
-
-# White background
-
----
-<!-- _class: invert -->
-
-![bg](green)
-![](#000)
-
-# Green background
-
----
-<!-- _class: invert -->
-
-![bg](red)
-![](white)
-
-# Red background
+# Why we talk about "*pseudo-random*" generation ?
