@@ -88,7 +88,7 @@ For example, to generate SSH keys or for LUKS encryption, we generally use **/de
 
 The special file **/dev/urandom** is used in quite different cases. In a reading process of this file, there isn't any entropy check, so the random values generated have a lower entropy quality. That's it could be better to used **/dev/urandom** for longs reading processes because the data stream is not bocked by the system.
 
-For example, the *shred* command (know to overwrite a file/disk to hide its contents, and optionally delete it) use the special file **/dev/urandom**.
+For example, the *shred* command (known to overwrite a file/disk to hide its contents, and optionally delete it) use the special file **/dev/urandom**.
 
 ## Other random data source devices
 
