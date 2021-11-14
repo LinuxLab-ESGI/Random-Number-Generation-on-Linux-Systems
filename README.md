@@ -78,11 +78,54 @@ As we mentioned before, on Linux systems, we have to use special files to genera
 
 ### /dev/random
 
+This special file is generally used for cryptographic purposes. In fact, while you are reading this source of random values, the system is controlling if the values generated have enough entropy. If not, the source of reading process can be blocked by the system. That's why it can't be used for long reading processes.
+
+Moreover, this special file can be interfaced with hardware components such as those mentioned above. It depends of course os the Linux distribution (if the necessary drivers are present) and the hardware configuration of your computer.
+
+For example, to generate SSH keys or for LUKS encryption, we generally use **/dev/random** for a better entropy.
+
 ### /dev/urandom
+
+The special file **/dev/urandom** is used in quite different cases. In a reading process of this file, there isn't any entropy check, so the random values generated have a lower entropy quality. That's it could be better to used **/dev/urandom** for longs reading processes because the data stream is not bocked by the system.
+
+For example, the *shred* command (know to overwrite a file/disk to hide its contents, and optionally delete it) use the special file **/dev/urandom**.
 
 ## Other random data source devices
 
+Finally, depending of the Linux distribution, you can have other random values sources with other special files. Here are some examples : 
+
+- **/dev/arandom** : Generates high-quality pseudo-random output data (based on RC4)
+
+- **/dev/prandom** : Simple pseudo-random generator (no entropy checks)
+
+- **/dev/srandom** : This device returns reliable random data even if sufficient entropy is not currently available (based on MD5)
+
 ## Appendix - Sources and References
 
+You can find here all my references that I used to write this article and the presentation :
+
+https://www.techno-science.net/glossaire-definition/Generateur-de-nombres-aleatoires-page-2.html
+
+https://developers.tpm.dev/landing?from=https%3A%2F%2Fdevelopers.tpm.dev%2Fposts%2Frandom-number-generator-tpm2-12528972
+
+https://nixdoc.net/man-pages/OpenBSD/man4/arandom.4.html
+
+https://wiki.archlinux.org/title/Random_number_generation
+
+https://wiki.archlinux.org/title/Device_file
+
+https://en.wikipedia.org/wiki/Hardware_random_number_generator
+
+https://en.wikipedia.org/wiki//dev/random
+
+https://linuxhint.com/dev_random_vs_dev_urandom/
+
+https://webinet.cafe-sciences.org/articles/au-fait-cest-quoi-lentropie/
+
+https://en.wikipedia.org/wiki/Pseudorandom_number_generator
+
+https://linuxconfig.org/identifying-file-types-in-linux
+
+
 __________
-Updated : 09/10/2021, Author : Xen0rInspire
+Updated : 14/10/2021, Author : Xen0rInspire
