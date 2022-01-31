@@ -74,7 +74,7 @@ These components generates random numbers from a measurable physical process as 
 
 ## /dev/random VS /dev/urandom
 
-As we mentioned before, on Linux systems, we have to use special files to generate random numbers. These two special files are the most commons ones and we can found them in most Linux distributions.
+As we mentioned before, on Linux systems, we have to use special files to generate random numbers. These two special files are the most common ones and we can found them in most Linux distributions.
 
 ### /dev/random
 
@@ -128,4 +128,4 @@ https://linuxconfig.org/identifying-file-types-in-linux
 
 
 __________
-Updated : 14/10/2021, Author : Xen0rInspire
+Updated : 31/01/2022, Author : Xen0rInspire
