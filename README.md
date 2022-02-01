@@ -2,7 +2,7 @@
 
 *This write-up has been written to complete the presentation and to deal in depth with the subject in detail.*
 __________
-## Technical terminology : 
+## <u>Technical terminology :</u>
 
 At first we need to define several concepts and technical terms to completely understand the process of pseudo-random number generation on Linux systems.
 
@@ -72,7 +72,7 @@ These components generate random numbers from a measurable physical process as m
 
 *The seed is the **entry point** of the pseudo-random generation algorithm. This value is defined explicitly by the user or directly with a default value like the system timestamp for example. The purpose of the seed is to allow the user to **lock** the pseudo-random number generator, to **prevent replicable analysis**.*
 
-## /dev/random VS /dev/urandom
+## <u>/dev/random VS /dev/urandom</u>
 
 As we mentioned before, on Linux systems, we have to use special files to generate random numbers. These two special files are the most common ones and we can found them in most Linux distributions.
 
@@ -90,7 +90,7 @@ The special file **/dev/urandom** is used in quite different cases. In a reading
 
 For example, the *shred* command (known to overwrite a file/disk to hide its contents, and optionally delete it) use the special file **/dev/urandom**.
 
-## Other random data source devices
+## <u>Other random data source devices</u>
 
 Finally, depending of the Linux distribution, you can have other random values sources with other special files. Here are some examples : 
 
@@ -100,7 +100,7 @@ Finally, depending of the Linux distribution, you can have other random values s
 
 - **/dev/srandom** : This device returns reliable random data even if sufficient entropy is not currently available (based on MD5)
 
-## Appendix - Sources and References
+## <u>Appendix - Sources and References</u>
 
 You can find here all my references that I used to write this article and the presentation :
 
@@ -128,4 +128,4 @@ https://linuxconfig.org/identifying-file-types-in-linux
 
 
 __________
-<i>Updated : 31/01/2022, Author : Xen0rInspire</i>
+<i>Updated : 01/02/2022, Author : Xen0rInspire</i>
