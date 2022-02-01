@@ -94,11 +94,11 @@ For example, the *shred* command (known to overwrite a file/disk to hide its con
 
 Finally, depending of the Linux distribution, you can have other random values sources with other special files. Here are some examples : 
 
-- **/dev/arandom** : Generates high-quality pseudo-random output data (based on RC4)
+- **/dev/arandom** : Generates high-quality pseudo-random output data (based on RC4 algorithm)
 
 - **/dev/prandom** : Simple pseudo-random generator (no entropy checks)
 
-- **/dev/srandom** : This device returns reliable random data even if sufficient entropy is not currently available (based on MD5)
+- **/dev/srandom** : This device returns reliable random data even if sufficient entropy is not currently available (based on MD5 algorithm)
 
 ## Appendix - Sources and References
 
