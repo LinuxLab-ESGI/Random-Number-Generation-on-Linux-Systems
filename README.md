@@ -66,7 +66,7 @@ Or like this more recent component, that we call TPM (you certainly heard about 
 
 ![bg fit right 25%](./img/tpm.png)
 
-These components generates random numbers from a measurable physical process as mentioned earlier. It can be the thermal noise for example or any other source of physical entropy. It is finally from this source that we generate a seed !
+These components generate random numbers from a measurable physical process as mentioned earlier. It can be the thermal noise for example or any other source of physical entropy. It is finally from this source that we generate a seed !
 
 ### But what is a seed in pseudo-random number generation ?
 
