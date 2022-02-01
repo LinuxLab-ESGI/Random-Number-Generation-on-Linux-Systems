@@ -128,4 +128,4 @@ https://linuxconfig.org/identifying-file-types-in-linux
 
 
 __________
-Updated : 31/01/2022, Author : Xen0rInspire
+<i>Updated : 31/01/2022, Author : Xen0rInspire</i>
