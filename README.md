@@ -56,13 +56,13 @@ You may have noticed in the first sentences of this article that I talked about 
 
 *Pseudo-random number generation creates a sequence of numbers that approximates the properties of perfect random numbers as closely as possible. It's based on **mathematical algorithms**.*
 
-For sure, it is impossible for our current computers to generate perfectly several random values as a human being would be able to do. That's why we need powerfull algorithms and measurable physical properties on which to base, to reach the best possible entropy.
+For sure, it is impossible for our current computers to generate perfectly several random values as a human being would be able to do. That's why we need powerful algorithms and measurable physical properties on which to base, to reach the best possible entropy.
 
-It also exists hardware components dedicated to this purpose like this PCIe expansion card :
+It also exists hardware components dedicated to this purpose such as this PCIe expansion card :
 
 ![bg fit right](./img/hardware-pcie-card.jpg) 
 
-Or like this more recent component, that we call TPM (you certainly heard about it when Windows 11 was released):
+Or this more recent component, that we call TPM (you certainly heard about it when Windows 11 was released):
 
 ![bg fit right 25%](./img/tpm.png)
 
